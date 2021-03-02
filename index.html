@@ -1,0 +1,39 @@
+<!--
+* Developed by Johnny Trejos Barrios.
+* Technology: HTML5.
+* Development Environment: VIM 8.0
+* Date: 01/03/2021, Time: 18:38:11.
+*
+* Additional Info.
+*
+* Source Code Target Or Details:
+*
+*     [Basic HTML output]
+*
+* Licenses: GNU GPL v3.0, Eclipse Public License 1.0, personal for non-commercial purposes.
+* Developer Contact: jtrejosb@live.com
+* GitHub.com/jtrejosb
+-->
+<html>
+  <head>
+    <title>Salary Calculator</title>
+  </head>
+  <body style="background:#232323">
+    <form>
+      <select id="weekdays">
+        <option>Select Weekday</option>
+        <option>Monday to Saturday</option>
+        <option>Sunday or Holidays</option>
+      </select>
+      <select id="schedule">
+        <option>Select Schedule</option>
+        <option>Diurnal</option>
+        <option>Nocturnal</option>
+      </select>
+      <input id="hours" type="number" placeholder="Worked Hours" autofocus/>
+      <input type="button" value="Calculate" onclick="calculate()"/>
+      <h1 id="output"></h1>
+    </form>
+    <script src="scripts/master.js"></script>
+  </body>
+</html>
